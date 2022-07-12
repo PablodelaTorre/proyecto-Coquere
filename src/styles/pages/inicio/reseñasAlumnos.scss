@@ -1,0 +1,81 @@
+.reseñasAlumnos {
+  width: 100vw;
+  padding: 2rem 5% 1rem 5%;
+  h4 {
+    font-family: $ff-poppins;
+    font-weight: 600;
+    font-size: $fs-mdg;
+    color: $verde-oscuro;
+    margin-bottom: 1rem;
+  }
+  .reseñasAlumnos__slider {
+    .awssld__content {
+      background-color: transparent;
+    }
+    .awssld__wrapper {
+      height: 380px;
+    }
+    .awssld__timer {
+      opacity: 0;
+      pointer-events: none;
+    }
+    .reseñasAlumnos__slider--contenedor {
+      display: flex;
+      width: 90%;
+      justify-content: space-around;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .reseñasAlumnos {
+    h4 {
+      font-size: $fs-xl;
+    }
+    .reseñasAlumnos__slider {
+      .awssld__wrapper {
+        height: 420px;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .reseñasAlumnos {
+    padding: 2rem 10%;
+    h4 {
+      font-size: $fs-xl;
+    }
+    .reseñasAlumnos__slider {
+      .awssld__wrapper {
+        height: 450px;
+      }
+    }
+    .reseñasAlumnos__galeria {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 5rem;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .reseñasAlumnos {
+    padding: 4rem 10%;
+    .reseñasAlumnos__slider {
+      .awssld__wrapper {
+        height: 410px;
+      }
+    }
+    .reseñasAlumnos__galeria {
+      
+      margin: 2rem 0;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .reseñasAlumnos {
+    padding: 4rem 15vw;
+  }
+}

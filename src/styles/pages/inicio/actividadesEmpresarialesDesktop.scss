@@ -1,0 +1,57 @@
+.actividadesEmpresarialesDesktop {
+  width: 100vw;
+  padding: 4rem 10%;
+  background-color: $gris-fondo-secciones;
+  h4 {
+    font-family: $ff-poppins;
+    font-weight: 600;
+    font-size: $fs-xl;
+    color: $verde-oscuro;
+    margin-bottom: 1rem;
+  }
+  .actividadesEmpresarialesDesktop__contenedor {
+    display: flex;
+    margin: 3rem 0;
+    img {
+      object-fit: cover;
+      width: 40%;
+      height: auto;
+    }
+    .actividadesEmpresarialesDesktop__info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      width: 45%;
+      margin-left: 2rem;
+      p {
+        font-family: $ff-inter;
+        font-size: $fs-mdg;
+        color: $verde-oscuro;
+        line-height: 1.5;
+      }
+      .boton {
+        width: fit-content;
+        padding: 0.5rem 1rem;
+        margin: 0;
+        margin-top: 3rem;
+        .boton--imagen {
+          width: 30px;
+          height: 30px;
+          margin-right: 1rem;
+          color: $blanco;
+        }
+        .boton--texto {
+          font-size: $fs-md;
+          color: $blanco;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .actividadesEmpresarialesDesktop {
+    padding: 4rem 15vw;
+  }
+}

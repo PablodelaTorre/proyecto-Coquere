@@ -1,0 +1,65 @@
+.talleres__card {
+  position: relative;
+  align-self: center;
+  width: 270px;
+  height: 260px;
+  box-shadow: $bs;
+  border-radius: $br-10;
+  img {
+    background-color: #d9d9d9;
+    width: 100%;
+    height: 60%;
+    border-radius: $br-10-top;
+    object-fit: cover;
+  }
+  .talleres__card--titulo {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    bottom: 31%;
+    right: 0;
+    width: 80%;
+    border-radius: 50px 0 0 50px;
+    background-color: $verde-claro;
+    h5 {
+      padding: 0.5rem;
+      font-family: $ff-poppins;
+      font-weight: 600;
+      font-size: $fs-md;
+      color: $blanco;
+    }
+  }
+  .talleres__card--descripcion {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 40%;
+    border-radius: $br-10-bottom;
+    background-color: $blanco;
+    p {
+      font-family: $ff-poppins;
+      font-size: $fs-md;
+      font-weight: bold;
+      margin-left: 5%;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .talleres__card {
+    width: 300px;
+    height: 280px;
+    .talleres__card--titulo {
+      width: 85%;
+      bottom: 33%;
+      h5 {
+        font-size: $fs-mdg;
+      }
+    }
+    .talleres__card--descripcion {
+      p {
+        font-size: $fs-md;
+      }
+    }
+  }
+}

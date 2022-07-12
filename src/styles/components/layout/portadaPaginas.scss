@@ -1,0 +1,55 @@
+.portadaPaginas {
+  width: 100vw;
+  position: relative;
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+  .portadaPaginas__titulo {
+    width: 50%;
+    position: absolute;
+    bottom: 20%;
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 0 50px 50px 0;
+    padding-left: 5%;
+    h1 {
+      font-family: $ff-poppins;
+      font-weight: 600;
+      font-size: $fs-md;
+      color: $verde-oscuro;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .portadaPaginas {
+    .portadaPaginas__titulo {
+      h1 {
+        font-size: $fs-xxl;
+      }
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .portadaPaginas {
+    img {
+      height: 350px;
+      object-fit: cover;
+    }
+    .portadaPaginas__titulo {
+      padding: 0.5rem 5%;
+      h1 {
+        font-size: $fs-xxl;
+      }
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .portadaPaginas {
+    padding: 0 12vw;
+    .portadaPaginas__titulo {
+     width: 40%;
+    }
+  }
+}

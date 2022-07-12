@@ -1,0 +1,57 @@
+.alumnosCard {
+  height: 380px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  img {
+    height: 40%;
+    width: auto;
+    margin-bottom: 1rem;
+  }
+  .alumnosCard__frase {
+    width: 85%;
+    height: 45%;
+    text-align: center;
+    font-family: $ff-inter;
+    font-size: $fs-sm;
+    font-weight: 500;
+    font-style: italic;
+    line-height: 2;
+  }
+  .alumnosCard__descripcion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 35%;
+    font-family: $ff-inter;
+    font-size: $fs-md;
+    color: $footer-derechos;
+    line-height: 2;
+  }
+}
+
+@media (min-width: 768px) {
+  .alumnosCard {
+    height: 430px;
+    width: 38vw;
+    .alumnosCard__frase {
+      font-size: $fs-mdg;
+      line-height: 1.2;
+    }
+    .alumnosCard__descripcion {
+      font-size: $fs-mdg;
+      line-height: 1.2;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .alumnosCard {
+    height: 400px;
+    img {
+      margin-bottom: 2rem;
+    }
+  }
+}

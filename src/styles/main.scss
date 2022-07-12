@@ -1,0 +1,120 @@
+//General
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: #fffdfd;
+}
+main {
+  padding-top: 55px;
+  
+}
+
+@media (min-width: 768px) {
+  main {
+    padding-top: 80px;
+  }
+}
+
+
+//custom-scrollbar
+::-webkit-scrollbar {
+  width: 1em;
+  color: transparent;
+}
+
+::-webkit-scrollbar-track {
+  background: #fffdfd;
+  border-radius: 100vw;
+  margin-block: 0.5em;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #bdc0c0;
+  border-radius: 100vw;
+  &:hover {
+    background-color: #9ca1a2;
+  }
+}
+@supports (scrollbar-color: #bdc0c0 #fffdfd) {
+  * {
+    scrollbar-color: #bdc0c0 #fffdfd;
+  }
+}
+
+//Fuentes
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+//Variables
+@import "./variables";
+
+//Layout
+
+@import "./components/layout/diplomadosDetalle.scss";
+@import "./components/layout/header";
+@import "./components/layout/footer";
+@import "./components/layout/footerTablet";
+@import "./components/layout/mobileMenu";
+@import "./components/layout/navBar";
+@import "./components/layout/portadaPaginas";
+@import "./components/layout/portadaPaginasDetalle";
+@import "./components/layout/boton";
+@import "./components/layout/wappFloat";
+
+//Components
+
+//Cards
+@import "./components/cards/diplomadosCard";
+@import "./components/cards/diplomadosDestacadosCard";
+@import "./components/cards/talleresCard";
+@import "./components/cards/alumnosCard";
+
+//Pages
+//Inicio
+@import "./pages/inicio";
+//componentes
+@import "./pages/inicio/sliderInicio";
+@import "./pages/inicio/porqueElegirnos";
+@import "./pages/inicio/diplomadosDestacados";
+@import "./pages/inicio/talleresDestacados";
+@import "./pages/inicio/reseñasAlumnos";
+@import "./pages/inicio/actividadesEmpresariales";
+@import "./pages/inicio/actividadesEmpresarialesDesktop";
+
+//Nosotros
+@import "./pages/Nosotros";
+//componentes
+@import "./pages/nosotros/historiaCoquere";
+@import "./pages/nosotros/instalaciones";
+@import "./pages/nosotros/rentaNuestrasInstalaciones";
+
+//Tallerres
+@import "./pages/talleres";
+//componentes
+@import "./pages/talleres/talleresCarrousel";
+
+//Empresarial
+@import "./pages/empresarial";
+//componentes
+@import "./pages/empresarial/empresarialContenido";
+
+//Diplomados
+@import "./pages/diplomados";
+//componentes
+@import "./pages/diplomados/diplomadosGaleria";
+@import "./pages/diplomados/masInfo";
+
+//Contacto
+@import "./pages/contacto";
+//componentes
+@import "./pages/contacto/comoLlegar";
+@import "./pages/contacto/redes";

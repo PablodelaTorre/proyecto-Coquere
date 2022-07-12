@@ -1,0 +1,126 @@
+.redes {
+  width: 100vw;
+  padding: 2rem 5%;
+  display: flex;
+  flex-direction: column;
+  h4 {
+    font-family: $ff-poppins;
+    font-weight: 600;
+    font-size: $fs-md;
+    color: $verde-oscuro;
+    margin-bottom: 0.8rem;
+  }
+  .redes__contenedor {
+    .redesContenedores {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: 2rem;
+
+      img {
+        width: 55px;
+        height: 55px;
+        transition: 0.3s;
+        border-radius: 15px;
+
+        &:hover {
+          transform: translateY(-4px);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+        }
+        &:active {
+          transform: translateY(2px);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+        }
+      }
+
+      div {
+        margin-bottom: 0.8rem;
+        margin-left: 15px;
+        display: flex;
+        flex-direction: column;
+
+        strong {
+          margin-top: 2vw;
+          font-family: $ff-poppins;
+          font-size: $fs-sm;
+          font-weight: 800;
+        }
+
+        p {
+          margin-top: 0.8vw;
+          font-family: $ff-poppins;
+          font-size: $fs-sm;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .redes {
+    h4 {
+      font-size: $fs-xl;
+    }
+    .redes__contenedor {
+      .redesContenedores {
+        margin-bottom: 3rem;
+        img {
+          width: 65px;
+          height: 65px;
+        }
+
+        div {
+          strong {
+            font-size: $fs-mdg;
+          }
+
+          p {
+            font-size: $fs-mdg;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .redes {
+    padding: 0rem 10% 3rem 10%;
+    h4 {
+      font-size: $fs-xl;
+      margin-bottom: 2rem;
+    }
+    .redes__contenedor {
+      display: flex;
+      justify-content: space-between;
+      .redesContenedores {
+        flex-direction: column;
+        img {
+          width: 65px;
+          height: 65px;
+        }
+
+        div {
+          margin: 0;
+          strong {
+            font-size: $fs-mdg;
+            text-align: center;
+          }
+
+          p {
+            font-size: $fs-mdg;
+            text-align: center;
+            margin-top: 0rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .redes {
+    padding: 3rem 15vw;
+  }
+}

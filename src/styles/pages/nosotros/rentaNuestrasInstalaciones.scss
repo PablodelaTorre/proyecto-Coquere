@@ -1,0 +1,45 @@
+.rentaNuestrasInstalaciones {
+  width: 100vw;
+  padding: 2rem 5%;
+  h4 {
+    font-family: $ff-poppins;
+    font-weight: 600;
+    font-size: $fs-mdg;
+    color: $verde-oscuro;
+    margin-bottom: 1rem;
+  }
+  .rentaNuestrasInstalaciones--texto {
+    font-family: $ff-inter;
+    font-size: $fs-md;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .rentaNuestrasInstalaciones {
+    h4 {
+      font-size: $fs-xl;
+    }
+    .rentaNuestrasInstalaciones--texto {
+      font-size: $fs-mdg;
+    }
+    .boton{
+      margin-top: 2rem;
+    }
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .rentaNuestrasInstalaciones {
+    padding: 4rem 10%;
+    .rentaNuestrasInstalaciones--texto {
+      font-size: $fs-md;
+    }
+  }
+}
+@media (min-width: 1440px) {
+  .rentaNuestrasInstalaciones {
+    padding: 4rem 15vw;
+  }
+}

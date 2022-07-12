@@ -1,0 +1,45 @@
+.empresarialContenido {
+  width: 100vw;
+  padding: 2rem 5%;
+  p {
+    font-family: $ff-inter;
+    font-size: $fs-md;
+    margin-bottom: 1.5rem;
+  }
+  .imgEmpresarial {
+    width: 100%;
+    margin-top: 2rem;
+    object-fit: cover;
+    object-position: bottom;
+  }
+}
+
+@media (min-width: 768px) {
+  .empresarialContenido {
+    p {
+      font-size: $fs-mdg;
+    }
+  }
+  .imgEmpresarial {
+    height: 500px;
+    border-radius: $br-10;
+  }
+}
+
+@media (min-width: 1200px) {
+  .empresarialContenido {
+    padding: 4rem 10%;
+    p {
+      font-size: $fs-md;
+    }
+  }
+  .imgEmpresarial {
+    height: 631px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .empresarialContenido {
+    padding: 4rem 15vw;
+  }
+}

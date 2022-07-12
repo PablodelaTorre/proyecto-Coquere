@@ -1,0 +1,212 @@
+.sliderInicio {
+  width: 100%;
+  .sliderInicio__slider--slide {
+    position: relative;
+    display: flex;
+    align-items: center;
+    .sliderInicio__slider--slide--img {
+      width: 100vw;
+      height: 300px;
+      object-fit: cover;
+      object-position: right;
+    }
+    .sliderInicio__slider--descripcion {
+      position: absolute;
+      width: 260px;
+      height: 230px;
+      margin-left: 30px;
+      background-color: #ffffffa7;
+      border-radius: $br-10;
+      z-index: 3;
+      box-shadow: $bs;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: flex-start;
+      padding: 0 17px;
+      .sliderInicio__slider--descripcion--img {
+        width: 90%;
+      }
+      p {
+        line-height: 1.5;
+        font-family: $ff-inter;
+        font-size: $fs-md;
+        font-weight: 500;
+        span {
+          font-weight: bold;
+        }
+      }
+      .boton {
+        background-color: $turquesa-oscuro;
+        height: 50px;
+      }
+    }
+  }
+
+  .sliderInicio__slider--slide2 {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    .sliderInicio__slider--slide--img2 {
+      width: 100vw;
+      height: 300px;
+      object-fit: cover;
+      object-position: right;
+    }
+    .sliderInicio__slider--slide2--logo {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      img {
+        height: 25px;
+      }
+    }
+    .sliderInicio__slider--descripcion2 {
+      position: absolute;
+      width: 300px;
+      height: 165px;
+      margin: 30px;
+      background-color: #ffffffa7;
+      border-radius: $br-10;
+      z-index: 3;
+      box-shadow: $bs;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: flex-start;
+      padding: 20px;
+      p {
+        line-height: 1.5;
+        font-family: $ff-inter;
+        font-size: $fs-md;
+        font-weight: 500;
+        span {
+          font-weight: bold;
+        }
+      }
+      .boton {
+        background-color: $turquesa-oscuro;
+        margin: 0;
+        margin-top: 0.5rem;
+        align-self: end;
+        height: 50px;
+      }
+    }
+  }
+}
+.sliderInicio__slider {
+  width: 100vw;
+  height: 300px;
+  .awssld__content {
+    background-color: transparent;
+  }
+  .awssld__timer {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .sliderInicio {
+    .sliderInicio__slider--slide {
+      .sliderInicio__slider--descripcion {
+        margin-left: 60px;
+        width: 290px;
+        height: 250px;
+
+        p {
+          font-size: $fs-mdg;
+        }
+      }
+    }
+    .sliderInicio__slider--slide2 {
+      .sliderInicio__slider--slide2--logo {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        img {
+          height: 35px;
+        }
+      }
+      .sliderInicio__slider--descripcion2 {
+        height: 170px;
+        margin-left: 60px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .sliderInicio {
+    height: 630px;
+    .awssld__wrapper {
+      height: 630px;
+    }
+    .sliderInicio__slider--slide {
+      .sliderInicio__slider--slide--img {
+        width: 100vw;
+        height: 630px;
+      }
+
+      .sliderInicio__slider--descripcion {
+        margin-left: 80px;
+        width: 600px;
+        height: 470px;
+        padding: 60px 30px;
+        justify-content: space-between;
+        p {
+          font-size: $fs-xl;
+        }
+      }
+    }
+    .sliderInicio__slider--slide2 {
+      justify-content: center;
+      .sliderInicio__slider--slide--img2 {
+        width: 100vw;
+        height: 630px;
+      }
+      .sliderInicio__slider--slide2--logo {
+        top: 35px;
+        right: 85px;
+        img {
+          height: 45px;
+        }
+      }
+      .sliderInicio__slider--descripcion2 {
+        width: 1085px;
+        height: 140px;
+        padding: 30px;
+        justify-content: space-between;
+        margin: 0 0 60px 0;
+        p {
+          font-size: $fs-xl;
+        }
+        .boton {
+          position: absolute;
+
+          bottom: 10%;
+          padding: 0.5rem 3rem;
+          p {
+            font-size: $fs-lg;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .sliderInicio {
+    padding: 0 12vw;
+    .sliderInicio__slider--slide {
+      .sliderInicio__slider--descripcion {
+        margin-left: 17vw;
+      }
+    }
+    .sliderInicio__slider--slide2 {
+      .sliderInicio__slider--slide2--logo {
+        right: 15vw;
+      }
+    }
+  }
+}

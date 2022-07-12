@@ -1,0 +1,60 @@
+.historiaCoquere {
+  width: 100vw;
+  padding: 2rem 5%;
+  h4 {
+    font-family: $ff-poppins;
+    font-weight: 600;
+    font-size: $fs-mdg;
+    color: $verde-oscuro;
+    margin-bottom: 1rem;
+  }
+  p {
+    font-family: $ff-inter;
+    font-size: $fs-md;
+    margin-bottom: 1.5rem;
+  }
+
+  img {
+    width: 95%;
+    margin-top: 0.8rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .historiaCoquere {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h4 {
+      align-self: flex-start;
+      font-size: $fs-xl;
+    }
+    p {
+      font-size: $fs-mdg;
+    }
+
+    img {
+      width: 60%;
+      margin: 2rem auto;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .historiaCoquere {
+    padding: 4rem 10%;
+    p {
+      font-size: $fs-md;
+    }
+    img {
+      width: 70%;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .historiaCoquere {
+    padding: 4rem 15vw;
+  }
+}

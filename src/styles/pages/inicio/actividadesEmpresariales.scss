@@ -1,0 +1,53 @@
+.actividadesEmpresariales {
+  width: 100vw;
+  padding: 2rem 5%;
+  background-color: $gris-fondo-secciones;
+  h4 {
+    font-family: $ff-poppins;
+    font-weight: 600;
+    font-size: $fs-mdg;
+    color: $verde-oscuro;
+    margin-bottom: 1rem;
+  }
+  p {
+    font-family: $ff-inter;
+    font-size: $fs-md;
+    color: $verde-oscuro;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+  }
+
+  .actividadesEmpresariales__galeria {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    img {
+      background-color: #d9d9d9;
+      width: 272px;
+      height: 260px;
+      border-radius: $br-10;
+      object-fit: cover;
+      object-position: top;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .actividadesEmpresariales {
+    padding: 2rem 5%;
+    h4 {
+      font-size: $fs-xl;
+      color: $verde-oscuro;
+      margin-bottom: 1rem;
+    }
+    p {
+      font-size: $fs-mdg;
+    }
+    .actividadesEmpresariales__galeria {
+      img {
+        width: 550px;
+        height: 380px;
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.talleres {
+  width: 100vw;
+  .boton {
+    background-color: $turquesa-oscuro;
+    margin-bottom: 2rem;
+    margin-left: 5%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .talleres {
+    .portadaPaginas {
+      margin-bottom: 3rem;
+    }
+    .boton {
+      margin-left: 8%;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .talleres {
+    .boton {
+      margin-left: 15vw;
+    }
+  }
+}

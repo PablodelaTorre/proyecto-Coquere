@@ -1,0 +1,64 @@
+.masInfo {
+  width: 100vw;
+  padding: 1rem 5% 3rem 5%;
+  background-color: $gris-fondo-secciones;
+
+  .masInfo--titulos {
+    margin: 2rem 0 1rem 0;
+    font-family: $ff-inter;
+    font-size: $fs-sm;
+    font-weight: 700;
+  }
+  .masInfo--masInfo {
+    margin: 0 0 1rem 0;
+    font-family: $ff-inter;
+    font-size: $fs-sm;
+    font-weight: 700;
+  }
+  ul {
+    li {
+      margin-bottom: 0.5vw;
+      margin-left: 5%;
+      font-family: $ff-inter;
+      font-size: $fs-sm;
+      font-weight: 500;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .masInfo {
+    padding: 1rem 10% 3rem 10%;
+
+    .masInfo--titulos {
+      font-size: $fs-mdg;
+    }
+    .masInfo--masInfo {
+      font-size: $fs-mdg;
+    }
+    ul {
+      li {
+        margin-left: 5%;
+
+        font-size: $fs-mdg;
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .masInfo {
+    padding: 3rem 10%;
+    ul {
+      li {
+        font-size: $fs-md;
+      }
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .masInfo {
+    padding: 1rem 15vw 3rem 15vw;
+  }
+}

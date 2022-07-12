@@ -1,0 +1,49 @@
+.boton {
+  background-color: $verde-claro;
+  border-radius: 50px;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  margin: 0rem auto;
+  transition: 0.3s;
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  }
+  &:active {
+    transform: translateY(2px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  }
+
+  .boton--imagen {
+    height: 20px;
+    margin-right: 1rem;
+    color: $blanco;
+  }
+  .boton--texto {
+    font-family: $ff-poppins;
+    color: $blanco;
+    font-size: $fs-md;
+    font-weight: 600;
+    margin: 0;
+    line-height: normal;
+    transition: 0.3s;
+  }
+}
+
+@media (min-width: 768px) {
+  .boton {
+    margin: 0;
+    .boton--imagen {
+      height: 30px;
+      margin-right: 1rem;
+      color: $blanco;
+    }
+    .boton--texto {
+      font-size: $fs-md;
+    }
+  }
+}
+
